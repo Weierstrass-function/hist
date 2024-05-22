@@ -1,0 +1,108 @@
+html{
+	height: 100%;
+}
+body{
+	background-color: #ffffff; color: #000;
+	font-family: "Times new roman";
+}
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+	position: fixed;
+	top: 1%;
+	left: 0;
+	right: 0;
+	background-color: #c28343;
+}
+main{
+	margin: 5%;
+	flex-grow: 1;
+	font-size: 200%;
+}
+
+img{
+	display: block;
+    margin: 0 auto;
+}
+
+/* заголовки */
+h1{
+	text-align: center;
+	font-size: 150%;
+}
+h2{
+	text-align: center;
+	font-size: 120%;
+	padding-top: 7%;
+}
+figcaption{
+	font-size: 110%;
+	font-weight: bold;
+}
+
+nav{	
+	width: 100%;
+	text-align: center;
+	font-size: 100%;
+}
+nav table{
+	width: 100%;
+}
+nav table tr th a{
+	text-decoration: none;
+	color: #ffd9b6;
+	font-size: 110%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+	display: inline-block;
+	font-size: 100%;
+}
+li{
+	text-align: left;
+}
+p{
+	font-family: "Times new roman";
+	font-size: 100%;
+}
+
+img{
+	width: 100%;
+}
+
+#sm{
+	width: 50%;
+}
+#vt {
+	width: 50%;
+}
+
+.list{
+	text-align: center;
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 5%;
+}
+/* .table tbody th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+} */
+/* .table tbody td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+} */
+/* .table thead tr td:first-child, .table thead tr th:first-child {
+	border-left: none;
+}
+.table tbody tr td:last-child, .table tbody tr th:last-child {
+	border-right: none;
+} */
