@@ -1,67 +1,110 @@
-html{
-	height: 100%;
-}
-body{
-	background-color: #ffffff; color: #000;
-	font-family: "Times new roman";
-}
-.wrapper{
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    box-sizing: border-box;
 }
 
+body{
+	background-color: #ffffff; color: #000;
+	font-family: "Arial";
+}
+
+
+/* header */
 header{
 	position: fixed;
 	top: 1%;
 	left: 0;
-	right: 0;
 	background-color: #c28343;
-}
-main{
-	margin: 5%;
-	flex-grow: 1;
-	font-size: 200%;
-}
-
-img{
-	display: block;
-    margin: 0 auto;
-}
-
-/* заголовки */
-h1{
+	width: 100vw;
 	text-align: center;
-	font-size: 150%;
 }
-h2{
-	text-align: center;
-	font-size: 120%;
-	padding-top: 7%;
-}
-figcaption{
-	font-size: 110%;
-	font-weight: bold;
-}
-
-nav{	
-	width: 100%;
-	text-align: center;
-	font-size: 100%;
-}
-nav table{
+header table {
 	width: 100%;
 }
-nav table tr th a{
+#home {
+	height: 5vh;
+	width: auto;
+}
+.nLink {
 	text-decoration: none;
 	color: #ffd9b6;
-	font-size: 110%;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
+/*adaptation*/
+/* @media (min-width: 1200px) {
+	main {
+		margin: 10vh 20vw 5vh;
+	}
+} */
+@media (min-width: 992px) {
+	main {
+		margin: 1vh 20vw 5vh;
+	}
+	h1 {
+		margin: 10vh 3vh 1vh;
+	}
+}
+@media (max-width: 992px) {
+	main {
+		margin: 1vh 2vw 5vh;
+	}
+	h1 {
+		margin: 15vh 3vh 1vh;
+	}
+}
+/*for phones*/
+@media (max-width: 768px) {
+	main {
+		margin: 1vh 5vw 5vh;
+	}
+	header {
+		display: none;
+	}
+	h1 {
+		margin: 3vh 3vh 1vh;
+	}
+}
 
+
+/* заголовки */
+h1{
+	text-align: center;
+}
+h2{
+	text-align: center;
+	font-size: 2em;
+	margin: 3vh 0 1vh;
+}
+figcaption{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0 0 1vh;
+}
+
+
+/*main content*/
+main{
+	background-color: #ffd9b650;
+	border-radius: 20px;
+	padding: 5%;
+	/* flex-grow: 1; */
+}
+p {
+	padding: 1vh 0 1vh 0;
+	font-size: 20px;
+	text-align: justify;
+}
+img{
+	width: 100%;
+	display: block;
+    margin: 0 auto;
+	padding: 1%;
+}
 ul{
 	display: inline-block;
 	font-size: 100%;
@@ -69,31 +112,30 @@ ul{
 li{
 	text-align: left;
 }
-p{
-	font-family: "Times new roman";
-	font-size: 100%;
-	text-align: justify;
-}
 
-img{
-	width: 100%;
-}
-
-#sm{
-	width: 50%;
-}
-#vt {
-	width: 50%;
-}
 
 .list{
-	text-align: center;
+	background-color: #ffddbe;
+	padding: 2% 10%;
+	margin: 1vh 0;
+	border-radius: 20px;
 }
-
+.listT {
+	background-color: #ffddbe;
+	width: 100%;
+	border-radius: 5px;
+}
 .table {
 	width: 100%;
-	margin-bottom: 5%;
+	/* margin-bottom: 5%; */
+	padding: 0%;
 }
+
+
+
+/* html{
+	height: 100%;
+} */
 /* .table tbody th {
 	font-weight: bold;
 	padding: 5px;
